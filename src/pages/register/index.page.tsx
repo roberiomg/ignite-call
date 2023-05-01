@@ -1,5 +1,11 @@
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Button, Heading, MultiStep, Text, TextInput } from '@roberiomg-ui/react'
+import {
+  Button,
+  Heading,
+  MultiStep,
+  Text,
+  TextInput,
+} from '@roberiomg-ui/react'
 import { AxiosError } from 'axios'
 import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
