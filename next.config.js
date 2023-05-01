@@ -1,11 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  pageExtensions: ['page.tsx', 'api.ts', 'api.tsx'],
-  images: {
-  domains: ['https://lh3.googleusercontent.com/'],
-  },
+{
+  "extends": [
+    "@rocketseat/eslint-config/react",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "camelcase": "off"
   }
-  
-  module.exports = nextConfig
+}
