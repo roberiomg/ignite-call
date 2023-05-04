@@ -10,11 +10,11 @@ export default async function handler(
     return res.status(405).end()
   }
 
-  const { name, username } = req.body
+  const { email, senha } = req.body
 
   const userExists = await prisma.user.findUnique({
     where: {
-      username,
+      email,
     },
   })
 
@@ -26,8 +26,8 @@ export default async function handler(
 
   const user = await prisma.user.create({
     data: {
-      name,
-      username,
+      email,
+      senha,
     },
   })
 
